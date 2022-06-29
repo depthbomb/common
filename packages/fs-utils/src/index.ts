@@ -76,6 +76,12 @@ export function createDirectoriesSync(...paths: string[]): void {
 	}
 };
 
+/**
+ * Gets the size of a file.
+ * @param path The path to the file
+ * @param returnFormatted Whether to return a human-readable format
+ * @returns The number of bytes representing the file size or a string if {@link returnFormatted} is set to `true`.
+ */
 export async function getFileSize(path: string, returnFormatted: boolean = false): Promise<number | string> {
 	if (await exists(path)) {
 		const { size } = await stat(path);
