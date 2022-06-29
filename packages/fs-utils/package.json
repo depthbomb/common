@@ -41,6 +41,11 @@
 			"cjs",
 			"esm"
 		],
+		"noExternal": [
+			"uid",
+			"pathe",
+			"convert"
+		],
 		"minify": true,
 		"skipNodeModulesBundle": false,
 		"target": "node16",
