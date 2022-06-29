@@ -2,6 +2,27 @@
 	"name": "@depthbomb/object-utils",
 	"description": "Common object utilities",
 	"version": "0.1.0",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"import": "./dist/index.mjs",
+		"require": "./dist/index.js"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/depthbomb/common.git",
+		"directory": "packages/object-utils"
+	},
+	"bugs": {
+		"url": "https://github.com/depthbomb/common/issues"
+	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "tsup"
 	},

@@ -1,6 +1,10 @@
 {
 	"private": true,
 	"name": "root-common",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/depthbomb/common.git"
+	},
 	"scripts": {
 		"build": "yarn workspaces foreach -pv run build"
 	},
