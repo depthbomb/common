@@ -1,6 +1,6 @@
 {
 	"npm": {
-		"publish": true
+		"publish": false
 	},
 	"git": {
 		"releaseName": "${version}",
@@ -11,8 +11,6 @@
 		"release": true
 	},
 	"plugins": {
-		"release-it-yarn-workspaces": {
-			"publish": false
-		}
+		"release-it-yarn-workspaces": true
 	}
 }
