@@ -6,7 +6,8 @@
 		"url": "git+https://github.com/depthbomb/common.git"
 	},
 	"scripts": {
-		"build": "yarn workspaces foreach -pv run build"
+		"build": "yarn workspaces foreach -pvt run build",
+		"release": "yarn workspaces foreach -v run release"
 	},
 	"devDependencies": {
 		"@swc/core": "^1.2.207",
@@ -14,8 +15,7 @@
 		"@typescript-eslint/eslint-plugin": "^5.30.0",
 		"@typescript-eslint/parser": "^5.30.0",
 		"eslint": "^8.18.0",
-		"release-it": "^14.0.0",
-		"release-it-yarn-workspaces": "^2.0.1",
+		"release-it": "^15.1.1",
 		"ts-node": "^10.8.1",
 		"tslib": "^2.4.0",
 		"tsup": "^6.1.2",

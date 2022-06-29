@@ -24,7 +24,8 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup"
+		"build": "tsup",
+		"release": "release-it"
 	},
 	"dependencies": {
 		"convert": "^4.5.0",
@@ -54,5 +55,18 @@
 		"splitting": true,
 		"sourcemap": false,
 		"keepNames": false
+	},
+	"release-it": {
+		"npm": {
+			"publish": true
+		},
+		"git": {
+			"releaseName": "${version}",
+			"tagName": "${version}",
+			"commitMessage": "chore: release ${version}"
+		},
+		"github": {
+			"release": true
+		}
 	}
 }

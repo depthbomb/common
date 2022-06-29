@@ -24,7 +24,14 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup"
+		"build": "tsup",
+		"release": "release-it"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.182"
 	},
 	"packageManager": "yarn@3.2.1",
 	"tsup": {
@@ -48,10 +55,17 @@
 		"sourcemap": false,
 		"keepNames": false
 	},
-	"dependencies": {
-		"lodash": "^4.17.21"
-	},
-	"devDependencies": {
-		"@types/lodash": "^4.14.182"
+	"release-it": {
+		"npm": {
+			"publish": true
+		},
+		"git": {
+			"releaseName": "${version}",
+			"tagName": "${version}",
+			"commitMessage": "chore: release ${version}"
+		},
+		"github": {
+			"release": true
+		}
 	}
 }
