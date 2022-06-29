@@ -1,0 +1,32 @@
+{
+	"name": "@depthbomb/fs-utils",
+	"description": "Common FileSystem utilities",
+	"version": "0.1.0",
+	"scripts": {
+		"build": "tsup"
+	},
+	"dependencies": {
+		"convert": "^4.5.0",
+		"pathe": "^0.3.1",
+		"uid": "^2.0.0"
+	},
+	"packageManager": "yarn@3.2.1",
+	"tsup": {
+		"clean": true,
+		"entry": [
+			"src/index.ts"
+		],
+		"format": [
+			"cjs",
+			"esm"
+		],
+		"minify": true,
+		"skipNodeModulesBundle": false,
+		"target": "node16",
+		"tsconfig": "./tsconfig.json",
+		"dts": true,
+		"splitting": true,
+		"sourcemap": false,
+		"keepNames": false
+	}
+}

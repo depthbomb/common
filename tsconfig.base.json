@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"module": "commonjs",
+		"target": "ESNext",
+		"lib": ["ESNext", "DOM"],
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true
+	}
+}
